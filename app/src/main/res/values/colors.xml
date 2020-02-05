@@ -11,6 +11,24 @@
     <color name="colorYellow">#FFEB3B</color>
     <color name="colorMaroon">#E20A0A</color>
     <color name="colorWhite">#F5F5F5</color>
+    <color name="colorBlue">#00A0E3</color>
+
+    <array name="rainbow">
+        <item>@color/colorSkyBlue</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorYellow</item>
+        <item>@color/colorPurple</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorMaroon</item>
+        <item>@color/colorGreen</item>
+        <item>@color/colorSkyBlue</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorMaroon</item>
+        <item>@color/colorYellow</item>
+        <item>@color/colorPurple</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorGreen</item>
+    </array>
 
 
 

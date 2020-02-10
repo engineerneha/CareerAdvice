@@ -41,14 +41,13 @@ public class ResumeTipsActivity extends AppCompatActivity {
         {
             Model1 model1=new Model1();
             model1.setText_Content(mainContent[i]);
-            model1.setContent_Image(img[i]);
+            model1.setImage(img[i]);
             model1.setTitle_Content(titleContent[i]);
             models.add(model1);
 
         }
-        recyclerAdapter1 resumeTipsAdapter=new recyclerAdapter1(ResumeTipsActivity.this,models,false);
+        recyclerAdapter1 resumeTipsAdapter=new recyclerAdapter1(this,models,0);
         recyclerView.setLayoutManager(linearLayoutManager);
-
         recyclerView.setAdapter(resumeTipsAdapter);
     }
 

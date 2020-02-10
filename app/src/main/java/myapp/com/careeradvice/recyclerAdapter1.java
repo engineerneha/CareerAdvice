@@ -19,10 +19,10 @@ public class recyclerAdapter1 extends RecyclerView.Adapter<recyclerAdapter1.View
     ArrayList<Model1> resumeModels=new ArrayList<>();
     public View.OnClickListener mOnClickListener = new MyOnClickListener();;
     Context context;
-    boolean type;
+    int type;
 
 
-    public recyclerAdapter1(Context context,ArrayList<Model1> resumeModels,boolean type)
+    public recyclerAdapter1(Context context,ArrayList<Model1> resumeModels,int type)
     {
         this.context=context;
         this.resumeModels=resumeModels;
@@ -40,10 +40,10 @@ public class recyclerAdapter1 extends RecyclerView.Adapter<recyclerAdapter1.View
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Model1 model = resumeModels.get(position);
 
-        holder.imageView_C.setBackgroundResource(model.getContent_Image());
+        holder.imageView_C.setBackgroundResource(model.getImage());
         holder.textView_C.setText(model.getTitle_Content());
 
-         if(type==false) {
+         if(type==0) {
 
              holder.textView.setText(model.getText_Content());
              holder.btn.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +54,7 @@ public class recyclerAdapter1 extends RecyclerView.Adapter<recyclerAdapter1.View
              });
              holder.txtRelated.setVisibility(View.GONE);
          }
-         else if(type==true){
+         else if(type==1){
 
             // holder.textView.setVisibility(View.GONE);
              holder.btn.setVisibility(View.GONE);

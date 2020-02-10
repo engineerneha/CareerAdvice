@@ -44,20 +44,19 @@ public class ResumeTipsHireActivity extends AppCompatActivity {
         recyclerView=findViewById(R.id.resumeRecyclerView);
 
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
-        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         ArrayList<Model1> models=new ArrayList<>();
         for(int i=0;i<img.length;i++)
         {
             Model1 model1=new Model1();
             model1.setText_Content(mainContent[i]);
-            model1.setContent_Image(img[i]);
+            model1.setImage(img[i]);
             model1.setTitle_Content(titleContent[i]);
             models.add(model1);
 
         }
-        recyclerAdapter1 resumeTipsAdapter=new recyclerAdapter1(this,models,true);
+        AdapterCareerAdviceCategoryView resumeTipsAdapter=new AdapterCareerAdviceCategoryView(this,models);
         recyclerView.setLayoutManager(linearLayoutManager);
-
         recyclerView.setAdapter(resumeTipsAdapter);
     }
 }

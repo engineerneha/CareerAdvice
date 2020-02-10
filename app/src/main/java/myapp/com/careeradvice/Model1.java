@@ -2,7 +2,7 @@ package myapp.com.careeradvice;
 
 public class Model1 {
     private String text_Main;
-    private int content_Image;
+    private int Image;
     private String text_Content;
     private String title_Content;
 
@@ -14,12 +14,12 @@ public class Model1 {
         this.title_Content = title_Content;
     }
 
-    public int getContent_Image() {
-        return content_Image;
+    public int getImage() {
+        return Image;
     }
 
-    public void setContent_Image(int content_Image) {
-        this.content_Image = content_Image;
+    public void setImage(int Image) {
+        this.Image = Image;
     }
 
     public String getText_Content() {

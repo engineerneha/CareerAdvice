@@ -9,15 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ResumeTipsHireActivity" />
-        <activity android:name=".ResumeTipsActivity" />
-        <activity android:name=".CareerAdviceListActivity">
+        <activity android:name=".CarrerAdviceSummaryFragment"></activity>
+        <activity android:name=".CareerAdviceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ResumeTipsHireActivity" />
+        <activity
+            android:name=".ResumeTipsActivity"
+            android:exported="true" />
+        <activity android:name=".CareerAdviceListActivity"></activity>
     </application>
 
 </manifest>
